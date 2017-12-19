@@ -3,7 +3,7 @@
 
 (tool-bar-mode -1)
 
-(add-to-list 'default-frame-alist '(fullscreen . maximized))
+(toggle-frame-maximized)
 
 (setq inhibit-startup-message t)
 
