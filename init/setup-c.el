@@ -25,8 +25,10 @@
   :init
   ;;  (define-key c-mode-map  [(tab)] 'company-complete)
   ;;  (define-key c++-mode-map  [(tab)] 'company-complete)
-  (define-key c-mode-map  (kbd "M-/") 'company-complete)
-  (define-key c++-mode-map  (kbd "M-/") 'company-complete)
+  (define-key c-mode-map  (kbd "M-/") 'dabbrev-expand)
+  (define-key c++-mode-map  (kbd "M-/") 'dabbrev-expand)
+  (define-key c-mode-map  [C-tab] 'company-complete)
+  (define-key c++-mode-map  [C-tab] 'company-complete)
   )
 
 (provide 'setup-c)
